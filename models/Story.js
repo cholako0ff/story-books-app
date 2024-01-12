@@ -13,7 +13,7 @@ const StorySchema = new mongoose.Schema({
     status: {
         type: String,
         default: 'public',
-        enum: ['publick', 'private']
+        enum: ['public', 'private']
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -21,7 +21,7 @@ const StorySchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        dafault: Date.now,
+        default: Date.now,
     },
 })
 
